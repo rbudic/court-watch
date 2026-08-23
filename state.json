@@ -1,0 +1,36 @@
+{
+  "firstRun": false,
+  "lastChecked": "2026-08-23T04:36:50.379Z",
+  "lastCheckedSydney": "23/08/2026, 2:36:50 pm",
+  "watching": [
+    "2026-08-30",
+    "2026-09-06",
+    "2026-09-13"
+  ],
+  "slots": {
+    "2026-08-30|court1|09:30": "open",
+    "2026-08-30|court1|10:30": "open",
+    "2026-08-30|court2|09:30": "open",
+    "2026-08-30|court2|10:30": "open",
+    "2026-08-30|court4|09:30": "open",
+    "2026-08-30|court4|10:30": "not-open",
+    "2026-08-30|court5|09:30": "open",
+    "2026-08-30|court5|10:30": "open",
+    "2026-09-06|court1|09:30": "not-open",
+    "2026-09-06|court1|10:30": "not-open",
+    "2026-09-06|court2|09:30": "not-open",
+    "2026-09-06|court2|10:30": "not-open",
+    "2026-09-06|court4|09:30": "not-open",
+    "2026-09-06|court4|10:30": "not-open",
+    "2026-09-06|court5|09:30": "not-open",
+    "2026-09-06|court5|10:30": "not-open",
+    "2026-09-13|court1|09:30": "not-open",
+    "2026-09-13|court1|10:30": "not-open",
+    "2026-09-13|court2|09:30": "not-open",
+    "2026-09-13|court2|10:30": "not-open",
+    "2026-09-13|court4|09:30": "not-open",
+    "2026-09-13|court4|10:30": "not-open",
+    "2026-09-13|court5|09:30": "not-open",
+    "2026-09-13|court5|10:30": "not-open"
+  }
+}
