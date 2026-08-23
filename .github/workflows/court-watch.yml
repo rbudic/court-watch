@@ -1,0 +1,83 @@
+name: Court watch
+
+on:
+  schedule:
+    # Every hour, on the hour (UTC). Sydney time doesn't matter at this
+    # frequency, so daylight saving never needs thinking about.
+    - cron: '0 * * * *'
+  workflow_dispatch:
+    # Lets you press a button to run it manually from the Actions tab.
+    inputs:
+      discover:
+        description: 'Dump the full page/JSON for debugging'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+# ---- the settings you're most likely to change ----
+env:
+  VENUE: TynesideTennisCourts
+  COURTS: '1,2,4,5'
+  SLOT_START: '09:30'
+  SLOT_END: '11:30'
+  SUNDAYS_AHEAD: '3'
+  NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+
+concurrency:
+  group: court-watch
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Cache Playwright browser
+        id: pw-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-chromium-${{ runner.os }}-v1
+
+      - name: Install Chromium
+        if: steps.pw-cache.outputs.cache-hit != 'true'
+        run: npx playwright install --with-deps chromium
+
+      - name: Install Chromium system deps
+        if: steps.pw-cache.outputs.cache-hit == 'true'
+        run: npx playwright install-deps chromium
+
+      - name: Check courts
+        run: node check.js ${{ inputs.discover && '--discover' || '' }}
+
+      - name: Upload debug output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-${{ github.run_id }}
+          path: debug/
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Save state back to the repo
+        if: always()
+        run: |
+          git config user.name "court-watch"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state.json || exit 0
+          git diff --staged --quiet && exit 0
+          git commit -m "state: $(date -u '+%Y-%m-%d %H:%MZ')"
+          git pull --rebase --autostash
+          git push
