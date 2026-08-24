@@ -1,8 +1,8 @@
 {
   "firstRun": false,
-  "lastChecked": "2026-08-24T13:58:17.485Z",
-  "lastCheckedSydney": "24/08/2026, 11:58:17 pm",
-  "serverDateTime": "2026-08-24T23:58:15.8510649+00:00",
+  "lastChecked": "2026-08-24T14:53:09.084Z",
+  "lastCheckedSydney": "25/08/2026, 12:53:09 am",
+  "serverDateTime": "2026-08-25T00:53:07.9691435+00:00",
   "roles": [
     {
       "Name": "Guest",
@@ -16,15 +16,15 @@
   "watching": [
     {
       "date": "2026-08-30",
-      "daysAhead": 6
+      "daysAhead": 5
     },
     {
       "date": "2026-09-06",
-      "daysAhead": 13
+      "daysAhead": 12
     },
     {
       "date": "2026-09-13",
-      "daysAhead": 20
+      "daysAhead": 19
     }
   ],
   "slots": {
