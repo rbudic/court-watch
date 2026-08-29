@@ -1,8 +1,8 @@
 {
   "firstRun": false,
-  "lastChecked": "2026-08-29T08:49:09.885Z",
-  "lastCheckedSydney": "29/08/2026, 6:49:09 pm",
-  "serverDateTime": "2026-08-29T18:49:08.0492025+00:00",
+  "lastChecked": "2026-08-29T14:17:40.202Z",
+  "lastCheckedSydney": "30/08/2026, 12:17:40 am",
+  "serverDateTime": "2026-08-30T00:17:39.0937199+00:00",
   "roles": [
     {
       "Name": "Guest",
@@ -15,35 +15,19 @@
   "newDayReleaseMinute": 0,
   "watching": [
     {
-      "date": "2026-08-30",
-      "daysAhead": 1
-    },
-    {
       "date": "2026-09-06",
-      "daysAhead": 8
+      "daysAhead": 7
     },
     {
       "date": "2026-09-13",
-      "daysAhead": 15
+      "daysAhead": 14
+    },
+    {
+      "date": "2026-09-20",
+      "daysAhead": 21
     }
   ],
   "slots": {
-    "2026-08-30|Court 1|09:30": "booked",
-    "2026-08-30|Court 1|10:00": "booked",
-    "2026-08-30|Court 1|10:30": "booked",
-    "2026-08-30|Court 1|11:00": "booked",
-    "2026-08-30|Court 2|09:30": "booked",
-    "2026-08-30|Court 2|10:00": "booked",
-    "2026-08-30|Court 2|10:30": "booked",
-    "2026-08-30|Court 2|11:00": "booked",
-    "2026-08-30|Court 4|09:30": "booked",
-    "2026-08-30|Court 4|10:00": "booked",
-    "2026-08-30|Court 4|10:30": "booked",
-    "2026-08-30|Court 4|11:00": "booked",
-    "2026-08-30|Court 5|09:30": "booked",
-    "2026-08-30|Court 5|10:00": "booked",
-    "2026-08-30|Court 5|10:30": "booked",
-    "2026-08-30|Court 5|11:00": "booked",
     "2026-09-06|Court 1|09:30": "booked",
     "2026-09-06|Court 1|10:00": "booked",
     "2026-09-06|Court 1|10:30": "booked",
@@ -75,6 +59,22 @@
     "2026-09-13|Court 5|09:30": "not-open",
     "2026-09-13|Court 5|10:00": "not-open",
     "2026-09-13|Court 5|10:30": "not-open",
-    "2026-09-13|Court 5|11:00": "not-open"
+    "2026-09-13|Court 5|11:00": "not-open",
+    "2026-09-20|Court 1|09:30": "not-open",
+    "2026-09-20|Court 1|10:00": "not-open",
+    "2026-09-20|Court 1|10:30": "not-open",
+    "2026-09-20|Court 1|11:00": "not-open",
+    "2026-09-20|Court 2|09:30": "not-open",
+    "2026-09-20|Court 2|10:00": "not-open",
+    "2026-09-20|Court 2|10:30": "not-open",
+    "2026-09-20|Court 2|11:00": "not-open",
+    "2026-09-20|Court 4|09:30": "not-open",
+    "2026-09-20|Court 4|10:00": "not-open",
+    "2026-09-20|Court 4|10:30": "not-open",
+    "2026-09-20|Court 4|11:00": "not-open",
+    "2026-09-20|Court 5|09:30": "not-open",
+    "2026-09-20|Court 5|10:00": "not-open",
+    "2026-09-20|Court 5|10:30": "not-open",
+    "2026-09-20|Court 5|11:00": "not-open"
   }
 }
