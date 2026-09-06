@@ -5,6 +5,12 @@ on:
     # Every hour, on the hour (UTC). Sydney time doesn't matter at this
     # frequency, so daylight saving never needs thinking about.
     - cron: '0 * * * *'
+
+    # Once the release timing is confirmed, uncomment this to check every five
+    # minutes across the suspected window. 14:00 UTC Saturday = midnight Sunday
+    # in Sydney while AEST is in effect; from 4 Oct 2026 (AEDT) shift back an hour.
+    # - cron: '*/5 13,14 * * 6'
+
   workflow_dispatch:
     # Lets you press a button to run it manually from the Actions tab.
     inputs:
@@ -23,6 +29,9 @@ env:
   SLOT_START: '09:30'
   SLOT_END: '11:30'
   SUNDAYS_AHEAD: '3'
+  # Also ping (quietly) when a slot went straight from "Not Open Yet" to booked —
+  # you missed it, but it tells you when the release fired. 'false' to silence.
+  NOTIFY_MISSED: 'true'
   NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
 
 concurrency:
@@ -44,12 +53,19 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      # The cache key MUST include the Playwright version. Each release bundles a
+      # different Chromium build number, so a version-agnostic key hands the new
+      # Playwright the old browser directory and it fails at launch.
+      - name: Resolve Playwright version
+        id: pw
+        run: echo "version=$(node -p "require('playwright/package.json').version")" >> "$GITHUB_OUTPUT"
+
       - name: Cache Playwright browser
         id: pw-cache
         uses: actions/cache@v5
         with:
           path: ~/.cache/ms-playwright
-          key: playwright-chromium-${{ runner.os }}-v1
+          key: playwright-chromium-${{ runner.os }}-${{ steps.pw.outputs.version }}
 
       - name: Install Chromium
         if: steps.pw-cache.outputs.cache-hit != 'true'
@@ -58,6 +74,11 @@ jobs:
       - name: Install Chromium system deps
         if: steps.pw-cache.outputs.cache-hit == 'true'
         run: npx playwright install-deps chromium
+
+      # Cheap no-op when the binary is already there; rescues the run if the
+      # cache ever restores a mismatched browser again.
+      - name: Verify the browser is actually present
+        run: npx playwright install chromium
 
       - name: Check courts
         run: node check.js ${{ inputs.discover && '--discover' || '' }}
