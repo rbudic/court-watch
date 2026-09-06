@@ -2,6 +2,13 @@
   "name": "court-watch",
   "version": "1.0.0",
   "private": true,
+  "description": "Watches play.tennis.com.au for Sunday courts being released for booking",
+  "scripts": {
+    "check": "node check.js",
+    "discover": "node check.js --discover",
+    "test": "node test-parse.js ./debug",
+    "dry": "node check.js --dry-run"
+  },
   "dependencies": {
     "playwright": "^1.56.0"
   }
