@@ -1,8 +1,8 @@
 {
   "firstRun": false,
-  "lastChecked": "2026-09-12T04:00:51.214Z",
-  "lastCheckedSydney": "12/09/2026, 2:00:51 pm",
-  "serverDateTime": "2026-09-12T14:00:49.9075821+00:00",
+  "lastChecked": "2026-09-12T09:08:22.922Z",
+  "lastCheckedSydney": "12/09/2026, 7:08:22 pm",
+  "serverDateTime": "2026-09-12T19:08:22.0299314+00:00",
   "roles": [
     {
       "Name": "Guest",
@@ -30,8 +30,8 @@
   "slots": {
     "2026-09-13|Court 1|09:30": "booked",
     "2026-09-13|Court 1|10:00": "booked",
-    "2026-09-13|Court 1|10:30": "bookable",
-    "2026-09-13|Court 1|11:00": "bookable",
+    "2026-09-13|Court 1|10:30": "booked",
+    "2026-09-13|Court 1|11:00": "booked",
     "2026-09-13|Court 2|09:30": "booked",
     "2026-09-13|Court 2|10:00": "booked",
     "2026-09-13|Court 2|10:30": "booked",
