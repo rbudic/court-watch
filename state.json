@@ -1,8 +1,8 @@
 {
   "firstRun": false,
-  "lastChecked": "2026-10-10T00:38:17.001Z",
-  "lastCheckedSydney": "10/10/2026, 11:38:17 am",
-  "serverDateTime": "2026-10-10T11:38:16.0624771+00:00",
+  "lastChecked": "2026-10-10T06:52:13.067Z",
+  "lastCheckedSydney": "10/10/2026, 5:52:13 pm",
+  "serverDateTime": "2026-10-10T17:52:12.109269+00:00",
   "roles": [
     {
       "Name": "Guest",
@@ -46,10 +46,10 @@
     "2026-10-11|Court 5|11:00": "booked",
     "2026-10-18|Court 1|09:30": "booked",
     "2026-10-18|Court 1|10:00": "booked",
-    "2026-10-18|Court 1|10:30": "bookable",
-    "2026-10-18|Court 1|11:00": "bookable",
-    "2026-10-18|Court 2|09:30": "bookable",
-    "2026-10-18|Court 2|10:00": "bookable",
+    "2026-10-18|Court 1|10:30": "booked",
+    "2026-10-18|Court 1|11:00": "booked",
+    "2026-10-18|Court 2|09:30": "booked",
+    "2026-10-18|Court 2|10:00": "booked",
     "2026-10-18|Court 2|10:30": "booked",
     "2026-10-18|Court 2|11:00": "booked",
     "2026-10-18|Court 4|09:30": "booked",
