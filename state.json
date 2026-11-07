@@ -1,8 +1,8 @@
 {
   "firstRun": false,
-  "lastChecked": "2026-11-07T06:56:13.691Z",
-  "lastCheckedSydney": "07/11/2026, 5:56:13 pm",
-  "serverDateTime": "2026-11-07T17:56:12.1295398+00:00",
+  "lastChecked": "2026-11-07T13:51:34.098Z",
+  "lastCheckedSydney": "08/11/2026, 12:51:34 am",
+  "serverDateTime": "2026-11-08T00:51:32.8066546+00:00",
   "roles": [
     {
       "Name": "Guest",
@@ -15,35 +15,19 @@
   "newDayReleaseMinute": 0,
   "watching": [
     {
-      "date": "2026-11-08",
-      "daysAhead": 1
-    },
-    {
       "date": "2026-11-15",
-      "daysAhead": 8
+      "daysAhead": 7
     },
     {
       "date": "2026-11-22",
-      "daysAhead": 15
+      "daysAhead": 14
+    },
+    {
+      "date": "2026-11-29",
+      "daysAhead": 21
     }
   ],
   "slots": {
-    "2026-11-08|Court 1|09:30": "booked",
-    "2026-11-08|Court 1|10:00": "booked",
-    "2026-11-08|Court 1|10:30": "booked",
-    "2026-11-08|Court 1|11:00": "booked",
-    "2026-11-08|Court 2|09:30": "booked",
-    "2026-11-08|Court 2|10:00": "booked",
-    "2026-11-08|Court 2|10:30": "booked",
-    "2026-11-08|Court 2|11:00": "booked",
-    "2026-11-08|Court 4|09:30": "booked",
-    "2026-11-08|Court 4|10:00": "booked",
-    "2026-11-08|Court 4|10:30": "booked",
-    "2026-11-08|Court 4|11:00": "booked",
-    "2026-11-08|Court 5|09:30": "booked",
-    "2026-11-08|Court 5|10:00": "booked",
-    "2026-11-08|Court 5|10:30": "booked",
-    "2026-11-08|Court 5|11:00": "booked",
     "2026-11-15|Court 1|09:30": "booked",
     "2026-11-15|Court 1|10:00": "booked",
     "2026-11-15|Court 1|10:30": "booked",
@@ -60,21 +44,37 @@
     "2026-11-15|Court 5|10:00": "booked",
     "2026-11-15|Court 5|10:30": "booked",
     "2026-11-15|Court 5|11:00": "booked",
-    "2026-11-22|Court 1|09:30": "bookable",
-    "2026-11-22|Court 1|10:00": "bookable",
+    "2026-11-22|Court 1|09:30": "booked",
+    "2026-11-22|Court 1|10:00": "booked",
     "2026-11-22|Court 1|10:30": "not-open",
     "2026-11-22|Court 1|11:00": "not-open",
-    "2026-11-22|Court 2|09:30": "bookable",
-    "2026-11-22|Court 2|10:00": "bookable",
+    "2026-11-22|Court 2|09:30": "booked",
+    "2026-11-22|Court 2|10:00": "booked",
     "2026-11-22|Court 2|10:30": "not-open",
     "2026-11-22|Court 2|11:00": "not-open",
-    "2026-11-22|Court 4|09:30": "bookable",
-    "2026-11-22|Court 4|10:00": "bookable",
+    "2026-11-22|Court 4|09:30": "booked",
+    "2026-11-22|Court 4|10:00": "booked",
     "2026-11-22|Court 4|10:30": "not-open",
     "2026-11-22|Court 4|11:00": "not-open",
-    "2026-11-22|Court 5|09:30": "bookable",
-    "2026-11-22|Court 5|10:00": "bookable",
+    "2026-11-22|Court 5|09:30": "booked",
+    "2026-11-22|Court 5|10:00": "booked",
     "2026-11-22|Court 5|10:30": "not-open",
-    "2026-11-22|Court 5|11:00": "not-open"
+    "2026-11-22|Court 5|11:00": "not-open",
+    "2026-11-29|Court 1|09:30": "booked",
+    "2026-11-29|Court 1|10:00": "booked",
+    "2026-11-29|Court 1|10:30": "booked",
+    "2026-11-29|Court 1|11:00": "booked",
+    "2026-11-29|Court 2|09:30": "not-open",
+    "2026-11-29|Court 2|10:00": "not-open",
+    "2026-11-29|Court 2|10:30": "not-open",
+    "2026-11-29|Court 2|11:00": "not-open",
+    "2026-11-29|Court 4|09:30": "not-open",
+    "2026-11-29|Court 4|10:00": "not-open",
+    "2026-11-29|Court 4|10:30": "not-open",
+    "2026-11-29|Court 4|11:00": "not-open",
+    "2026-11-29|Court 5|09:30": "not-open",
+    "2026-11-29|Court 5|10:00": "not-open",
+    "2026-11-29|Court 5|10:30": "not-open",
+    "2026-11-29|Court 5|11:00": "not-open"
   }
 }
